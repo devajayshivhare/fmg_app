@@ -26,7 +26,15 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/fmg_app/css/fmg_app.css"
-# app_include_js = "/assets/fmg_app/js/fmg_app.js"
+app_include_js = [
+    "/assets/fmg_app/js/project.js",
+    "/assets/fmg_app/js/flooring_order.js",
+    
+]
+
+override_whitelisted_methods = {
+	"fmg_app.send_project_proposal": "fmg_app.api.send_project_proposal"
+}
 
 # include js, css files in header of web template
 # web_include_css = "/assets/fmg_app/css/fmg_app.css"

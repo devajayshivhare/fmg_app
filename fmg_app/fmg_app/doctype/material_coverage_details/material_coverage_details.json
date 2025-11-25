@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-20 10:57:13.551106",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier",
+  "custom_product_used",
+  "custom_manufacturer_name",
+  "custom_product_name",
+  "coverage_text",
+  "coverage_value",
+  "quantity_needed",
+  "unit_rate",
+  "total_cost",
+  "selected",
+  "parent_prp_row"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "quantity_needed",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty Needed (L)"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Cost (\u20b9)"
+  },
+  {
+   "default": "0",
+   "fieldname": "selected",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Use This?"
+  },
+  {
+   "fieldname": "parent_prp_row",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Link to Parent Row"
+  },
+  {
+   "fieldname": "custom_product_used",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Product Used"
+  },
+  {
+   "fieldname": "custom_manufacturer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "custom_product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "coverage_text",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Coverage (text)"
+  },
+  {
+   "fieldname": "coverage_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Coverage (num)"
+  },
+  {
+   "fieldname": "unit_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Unit Rate (\u20b9)"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-24 15:09:47.142226",
+ "modified_by": "Administrator",
+ "module": "Fmg App",
+ "name": "Material Coverage Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

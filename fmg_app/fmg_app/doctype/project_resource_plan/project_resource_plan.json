@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-17 22:04:23.594261",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "description",
+  "uom",
+  "material_needed",
+  "unit_rate",
+  "total_material_rs",
+  "labor_needed",
+  "unit_rate_inr",
+  "total_labor_rs",
+  "material_margin",
+  "custom_material_margin_type",
+  "custom_material_margin_value",
+  "total_material_rs_new",
+  "labor_margin",
+  "custom_labor_margin_type",
+  "custom_labor_margin_value",
+  "total_labor_rs_new",
+  "total_rs"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code.description",
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fetch_from": "item_code.stock_uom",
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UOM"
+  },
+  {
+   "fieldname": "material_needed",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Material Needed",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "unit_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Rate"
+  },
+  {
+   "fieldname": "labor_needed",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Labor Needed"
+  },
+  {
+   "fieldname": "unit_rate_inr",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Rate Rs"
+  },
+  {
+   "fieldname": "total_labor_rs",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Labor Rs"
+  },
+  {
+   "fieldname": "total_labor_rs_new",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Labor Rs New"
+  },
+  {
+   "fieldname": "total_rs",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Rs"
+  },
+  {
+   "fieldname": "total_material_rs_new",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Material Rs New"
+  },
+  {
+   "fieldname": "total_material_rs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Material Rs"
+  },
+  {
+   "fieldname": "material_margin",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Material Margin(%)"
+  },
+  {
+   "fieldname": "labor_margin",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Labor Margin(%)"
+  },
+  {
+   "fieldname": "custom_material_margin_type",
+   "fieldtype": "Select",
+   "label": "Material Margin Type",
+   "options": "Percentage\nPer Unit"
+  },
+  {
+   "fieldname": "custom_material_margin_value",
+   "fieldtype": "Float",
+   "label": "Material Margin Value"
+  },
+  {
+   "fieldname": "custom_labor_margin_type",
+   "fieldtype": "Select",
+   "label": "Labor Margin Type",
+   "options": "Percentage\nPer Unit"
+  },
+  {
+   "fieldname": "custom_labor_margin_value",
+   "fieldtype": "Float",
+   "label": "Labor Margin Value"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-20 14:38:33.293351",
+ "modified_by": "Administrator",
+ "module": "Fmg App",
+ "name": "Project Resource Plan",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
