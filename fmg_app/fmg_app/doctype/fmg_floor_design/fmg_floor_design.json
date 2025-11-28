@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-28 12:24:03.241650",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "location",
+  "engineer",
+  "floor_loading",
+  "subbase",
+  "racking_height",
+  "surface_regulation",
+  "slab_thickness",
+  "concrete_strength",
+  "floor_size_sqm",
+  "total_control_joints",
+  "total_armour_joints",
+  "total_length_of_joints",
+  "reinforcement_required",
+  "show_fmgprofloor",
+  "show_fmgsmartgrid",
+  "show_fmgadvantage",
+  "show_fmgadvantage_jointless",
+  "fmgprofloor"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "engineer",
+   "fieldtype": "Data",
+   "label": "Engineer"
+  },
+  {
+   "fieldname": "floor_loading",
+   "fieldtype": "Data",
+   "label": "Floor Loading"
+  },
+  {
+   "fieldname": "subbase",
+   "fieldtype": "Data",
+   "label": "Subbase"
+  },
+  {
+   "fieldname": "racking_height",
+   "fieldtype": "Data",
+   "label": "Racking Height"
+  },
+  {
+   "fieldname": "surface_regulation",
+   "fieldtype": "Data",
+   "label": "Surface Regulation"
+  },
+  {
+   "fieldname": "slab_thickness",
+   "fieldtype": "Data",
+   "label": "Slab Thickness"
+  },
+  {
+   "fieldname": "concrete_strength",
+   "fieldtype": "Data",
+   "label": "Concrete Strength"
+  },
+  {
+   "fieldname": "floor_size_sqm",
+   "fieldtype": "Float",
+   "label": "Floor Size Sqm"
+  },
+  {
+   "fieldname": "fmgprofloor",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "FMGPROFLOOR",
+   "options": "FMGPROFLOOR"
+  },
+  {
+   "fieldname": "total_control_joints",
+   "fieldtype": "Float",
+   "label": "Total Control Joints"
+  },
+  {
+   "fieldname": "total_armour_joints",
+   "fieldtype": "Float",
+   "label": "Total Armour Joints"
+  },
+  {
+   "fieldname": "total_length_of_joints",
+   "fieldtype": "Float",
+   "label": "Total Length of Joints"
+  },
+  {
+   "fieldname": "reinforcement_required",
+   "fieldtype": "Float",
+   "label": "Reinforcement Required"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_fmgprofloor",
+   "fieldtype": "Check",
+   "label": "Show FMGPROFLOOR"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_fmgsmartgrid",
+   "fieldtype": "Check",
+   "label": "Show FMGSMARTGRID"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_fmgadvantage",
+   "fieldtype": "Check",
+   "label": "Show FMGADVANTAGE"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_fmgadvantage_jointless",
+   "fieldtype": "Check",
+   "label": "Show FMGADVANTAGE Jointless"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-28 15:56:50.887558",
+ "modified_by": "Administrator",
+ "module": "Fmg App",
+ "name": "FMG Floor Design",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

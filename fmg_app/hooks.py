@@ -36,6 +36,8 @@ override_whitelisted_methods = {
 	"fmg_app.send_project_proposal": "fmg_app.api.send_project_proposal"
 }
 
+fixtures = ["Custom Field", "Property Setter"]
+
 # include js, css files in header of web template
 # web_include_css = "/assets/fmg_app/css/fmg_app.css"
 # web_include_js = "/assets/fmg_app/js/fmg_app.js"
