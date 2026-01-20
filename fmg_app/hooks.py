@@ -36,7 +36,35 @@ override_whitelisted_methods = {
 	"fmg_app.send_project_proposal": "fmg_app.api.send_project_proposal"
 }
 
-fixtures = ["Custom Field", "Property Setter"]
+# fixtures = ["Custom Field", "Property Setter"]
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            # ["dt", "like", "FMG%"]
+            ["dt", "in", [  "FMGPROFLOOR", "FMGSMARTGRID", "FMGADVANTAGE", "FMGADVANTAGE-JOINTLESS", "Material Coverage Details", "Project Resource Plan", "FMG Floor Design"]]
+        ]
+    },
+    {
+        "dt": "Property Setter",
+        "filters": [
+            # ["doc_type", "like", "FMG%"]
+            ["doc_type", "in", [  "FMGPROFLOOR", "FMGSMARTGRID", "FMGADVANTAGE", "FMGADVANTAGE-JOINTLESS", "Material Coverage Details", "Project Resource Plan", "FMG Floor Design"]]
+        ]
+    },
+    {
+        "dt": "Client Script",
+        "filters": [
+            
+                # ["dt", "like", "FMG%"],
+                ["dt", "in", [  "Project", "FMG Floor Design"]]
+            
+        ]
+    }
+   
+]
+
 
 # include js, css files in header of web template
 # web_include_css = "/assets/fmg_app/css/fmg_app.css"
