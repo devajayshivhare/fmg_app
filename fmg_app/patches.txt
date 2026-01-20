@@ -6,3 +6,6 @@
 # Patches added in this section will be executed after doctypes are migrated
 
 fmg_app.patches.v1_0.add_project_custom_fields
+fmg_app.patches.v1_0.create_project_resource_plan_doctype
+fmg_app.patches.v1_0.create_material_coverage_details_doctype
+fmg_app.patches.v1_0.add_project_child_tables
